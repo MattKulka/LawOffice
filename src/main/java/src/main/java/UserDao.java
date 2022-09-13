@@ -5,32 +5,32 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-public class UserDao implements Dao<User>{
+public class UserDao implements Dao<src.main.java.User>{
 
-    private final List<User> users = new ArrayList<>();
+    private final List<src.main.java.User> users = new ArrayList<>();
 
     public UserDao() {
-        users.add(new User("John", "john@domain.com"));
-        users.add(new User("Susan", "susan@domain.com"));
+        users.add(new src.main.java.User("John", "john@domain.com"));
+        users.add(new src.main.java.User("Susan", "susan@domain.com"));
     }
 
     @Override
-    public Optional<User> get(long id) {
+    public Optional<src.main.java.User> get(long id) {
         return Optional.ofNullable(users.get((int) id));
     }
 
     @Override
-    public List<User> getAll() {
+    public List<src.main.java.User> getAll() {
         return users;
     }
 
     @Override
-    public void save(User user) {
+    public void save(src.main.java.User user) {
         users.add(user);
     }
 
     @Override
-    public void update(User user, String[] params) {
+    public void update(src.main.java.User user, String[] params) {
         user.setName(Objects.requireNonNull(
                 params[0], "Name cannot be null"));
         user.setEmail(Objects.requireNonNull(
@@ -40,7 +40,7 @@ public class UserDao implements Dao<User>{
     }
 
     @Override
-    public void delete(User user) {
+    public void delete(src.main.java.User user) {
         users.remove(user);
     }
 
