@@ -1,4 +1,6 @@
-package src.main.java;
+package src.main.java.dao;
+
+import src.main.java.dao.User;
 
 import java.util.List;
 import java.util.Optional;

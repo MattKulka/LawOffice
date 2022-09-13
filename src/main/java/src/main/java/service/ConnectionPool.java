@@ -1,4 +1,4 @@
-package src.main.java;
+package src.main.java.service;
 
 import java.sql.Connection;
 import java.util.ArrayList;

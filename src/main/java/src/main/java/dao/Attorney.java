@@ -1,4 +1,4 @@
-package src.main.java;
+package src.main.java.dao;
 
 public class Attorney {
     private String name;
