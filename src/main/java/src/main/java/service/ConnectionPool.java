@@ -21,12 +21,11 @@ public class ConnectionPool {
         return pool;
     }
 
-    public Connection getConnection(){
-
-        return null;
+    public synchronized Connection getConnection(){
+        return connectionPool.remove(connectionPool.size()-1);
     }
 
-    public void returnConnection(){
-
+    public synchronized void returnConnection(Connection connection){
+        connectionPool.add(connection);
     }
 }
