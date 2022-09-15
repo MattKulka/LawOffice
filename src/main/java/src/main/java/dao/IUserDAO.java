@@ -1,11 +1,9 @@
 package src.main.java.dao;
 
-import src.main.java.dao.User;
-
 import java.util.List;
 import java.util.Optional;
 
-public interface Dao<T> {
+public interface IUserDAO<T> {
     Optional<User> get(long id);
 
     List<User> getAll();
