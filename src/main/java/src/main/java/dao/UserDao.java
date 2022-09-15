@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-public class UserDao implements Dao<User> {
+public class UserDao implements IUserDAO<User> {
 
     private final List<User> users = new ArrayList<>();
 
