@@ -16,22 +16,22 @@ public class Practice {
         Category[2] = "Federal Crimes";
 
         FLCrimes[0] = "Divorce";
-        FLCrimes[0] = "Adoption";
-        FLCrimes[0] = "Guardianship";
-        FLCrimes[0] = "Domestic Abuse";
-        FLCrimes[0] = "Child Abuse";
+        FLCrimes[1] = "Adoption";
+        FLCrimes[2] = "Guardianship";
+        FLCrimes[3] = "Domestic Abuse";
+        FLCrimes[4] = "Child Abuse";
 
         TVCrimes[0] = "Speeding Ticket";
-        TVCrimes[0] = "Parking Violation";
-        TVCrimes[0] = "Reckless Operation";
-        TVCrimes[0] = "DUI";
-        TVCrimes[0] = "Street Racing";
+        TVCrimes[1] = "Parking Violation";
+        TVCrimes[2] = "Reckless Operation";
+        TVCrimes[3] = "DUI";
+        TVCrimes[4] = "Street Racing";
 
         FedCrimes[0] = "Money Laundering";
-        FedCrimes[0] = "Kidnapping";
-        FedCrimes[0] = "Identity Theft";
-        FedCrimes[0] = "Robbery";
-        FedCrimes[0] = "Terrorism";
+        FedCrimes[1] = "Kidnapping";
+        FedCrimes[2] = "Identity Theft";
+        FedCrimes[3] = "Robbery";
+        FedCrimes[4] = "Terrorism";
 
 
 
