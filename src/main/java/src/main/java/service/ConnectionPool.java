@@ -10,7 +10,7 @@ public class ConnectionPool {
 
     private static ConnectionPool pool;
 
-    private final List<Connection> connectionPool = new ArrayList<>(5);
+    private static final List<Connection> connectionPool = new ArrayList<>(5);
 
     private ConnectionPool() {
 
@@ -21,7 +21,7 @@ public class ConnectionPool {
             pool = new ConnectionPool();
             for (int i = 0; i < 5; i++){
                 try {
-                    connectionPool.add(DriverManager.getConnection());
+                    connectionPool.add(DriverManager.getConnection("jdbc:mysql://localhost:3306/LawOffice", "root", "Matthew1"));
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
