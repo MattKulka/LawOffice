@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Consultation>
+<consult location ="Seattle">
+    <ConsultFee>
+        <Amount> 50 </Amount>
+    </ConsultFee>
+</consult>
+<consult location ="Albuquerque">
+    <ConsultFee>
+        <Amount> 75 </Amount>
+    </ConsultFee>
+</consult>
+<consult location ="Boulder" >
+    <ConsultFee>
+        <Amount>  100  </Amount>
+    </ConsultFee>
+</consult>
+</Consultation>

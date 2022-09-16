@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Billing>
+<Payment type="Credit Card">
+    <PaymentFee>
+        <Percentage> 15 </Percentage>
+    </PaymentFee>
+</Payment>
+<Payment type="Debit Card">
+    <PaymentFee>
+        <Percentage> 10 </Percentage>
+    </PaymentFee>
+</Payment>
+<Payment type="Check" >
+    <PaymentFee>
+        <Percentage>  5  </Percentage>
+    </PaymentFee>
+</Payment>
+<Payment type = "Cash">
+    <PaymentFee> 2.5 </PaymentFee>
+</Payment>
+</Billing>

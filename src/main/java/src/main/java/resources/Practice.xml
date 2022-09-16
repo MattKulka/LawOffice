@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practices>
+<Practice category="Family Law" crimescovered="5" >
+    <Offenses>
+        <OffenseOne>Divorce</OffenseOne>
+        <OffenseTwo>Adoption</OffenseTwo>
+        <OffenseThree>Guardianship</OffenseThree>
+        <OffenseFour>Domestic Abuse</OffenseFour>
+        <OffenseFives>Child Abuse</OffenseFives>
+    </Offenses>
+</Practice>
+<Practice category="Traffic Violations" crimescovered="5" >
+    <Offenses>
+        <OffenseOne>Speeding Ticket</OffenseOne>
+        <OffenseTwo>Parking Violation</OffenseTwo>
+        <OffenseThree>Reckless Operation</OffenseThree>
+        <OffenseFour>DUI</OffenseFour>
+        <OffenseFives>Street Racing</OffenseFives>
+    </Offenses>
+</Practice>
+<Practice category="Federal Crimes" crimescovered="5">
+    <Offenses>
+        <OffenseOne>Money Laundering</OffenseOne>
+        <OffenseTwo>Kidnapping</OffenseTwo>
+        <OffenseThree>Identity Theft</OffenseThree>
+        <OffenseFour>Robbery</OffenseFour>
+        <OffenseFives>Terrorism</OffenseFives>
+    </Offenses>
+</Practice>
+</Practices>
