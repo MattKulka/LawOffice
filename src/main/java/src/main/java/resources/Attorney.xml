@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Attorneys>
+<Attorney category="Family Law" LicenseDate="2003-03-22" >
+    <office>Boulder</office>
+    <name>
+        <first-name>Benjamin</first-name>
+        <last-name>Smith</last-name>
+    </name>
+</Attorney>
+<Attorney category="Federal Crimes" LicenseDate="1997-11-17" >
+    <office>Albuquerque</office>
+    <name>
+        <first-name>Saul</first-name>
+        <last-name>Goodman</last-name>
+    </name>
+</Attorney>
+<Attorney category="Traffic Violations" LicenseDate="1989-11-17">
+    <office>Seattle</office>
+    <name>
+        <first-name>Jeffery</first-name>
+        <last-name>Frederickson</last-name>
+    </name>
+</Attorney>
+</Attorneys>

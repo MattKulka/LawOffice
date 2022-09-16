@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema  elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Practices">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Practice">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Offenses" type="xs:string" />
+                            <xs:element name="name">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" name="OffenseOne" type="xs:string" />
+                                        <xs:element minOccurs="0" name="OffenseTwo" type="xs:string" />
+                                        <xs:element minOccurs="0" name="OffenseThree" type="xs:string" />
+                                        <xs:element minOccurs="0" name="OffenseFour" type="xs:string" />
+                                        <xs:element minOccurs="0" name="OffenseFive" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Category" type="xs:string" use="required" />
+                        <xs:attribute name="crimescovered" type="xs:date" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
