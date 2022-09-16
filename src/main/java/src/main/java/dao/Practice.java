@@ -6,10 +6,10 @@ public class Practice {
 
     public static void main(String[] args) {
 
+        String[] Category = new String[3];
         String[] FLCrimes = new String[5];
         String[] TVCrimes = new String[5];
         String[] FedCrimes = new String[5];
-        String[] Category = new String[3];
 
         Category[0] = "Family Law";
         Category[1] = "Traffic Violations";
