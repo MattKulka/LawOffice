@@ -10,8 +10,8 @@ public class UserDao implements IUserDAO<User> {
     private final List<User> users = new ArrayList<>();
 
     public UserDao() {
-        users.add(new User("John", "john@domain.com"));
-        users.add(new User("Susan", "susan@domain.com"));
+        users.add(new User("Matt", "Matt@domain.com"));
+        users.add(new User("Sarah", "Sarah@domain.com"));
     }
 
     @Override
