@@ -6,17 +6,15 @@ import java.util.Optional;
 
 public interface IAttorneyDAO {
 
-    public interface IAttorneyDao<T> {
-        Optional<Attorney> get(long id);
+    Optional<Attorney> get(long id);
 
-        List<Attorney> getAll();
+    List<Attorney> getAll();
 
-        void save(Attorney attorney);
+    void save(Attorney attorney);
 
-        void update(Attorney attorney, String[] params);
+    void update(Attorney attorney, String[] params);
 
-        void delete(Attorney attorney);
-    }
+    void delete(Attorney attorney);
 
 }
 

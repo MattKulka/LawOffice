@@ -5,16 +5,17 @@ import java.util.Optional;
 
 public interface IPracticeDAO {
 
-    public interface IPracticeDao<T> {
-        Optional<Practice> get(long id);
+    Optional<Practice> get(long id);
 
-        List<Practice> getAll();
+    List<Practice> getAll();
 
-        void save(Practice practice);
+    void save(Practice practice);
 
-        void update(Practice practice, String[] params);
+    void update(Practice practice, String[] params);
 
-        void delete(Practice practice);
+    void delete(Practice practice);
+
+
     }
 
-}
+
