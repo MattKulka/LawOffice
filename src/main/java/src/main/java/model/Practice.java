@@ -1,4 +1,4 @@
-package src.main.java.dao;
+package src.main.java.model;
 
 import java.util.Arrays;
 
