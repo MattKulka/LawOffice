@@ -1,22 +1,29 @@
 package src.main.java.model;
 
 public class Billing {
-
-    private static String PaymentType;
-    private static Double HourlyFee;
-    private static Double MiscFees;
-    private static String TotalFees;
-
-    private static Integer Hours;
-
-    public static void main(String[] args) {
+    private int paymentMethod;
+    private String type;
 
 
-
-        TotalFees = String.valueOf((HourlyFee * Hours) + MiscFees);
-
-
-
+    public Billing(int paymentMethod, String type) {
+        this.paymentMethod = paymentMethod;
+        this.type = type;
     }
+
+    public Billing(String s, int i, Attorney person2) {
+    }
+
+    public int getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+
+
+
+
 
 }
