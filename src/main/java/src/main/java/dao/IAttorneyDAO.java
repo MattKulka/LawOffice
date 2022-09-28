@@ -1,6 +1,7 @@
 package src.main.java.dao;
 
-import java.sql.Connection;
+import src.main.java.model.Attorney;
+
 import java.util.List;
 import java.util.Optional;
 

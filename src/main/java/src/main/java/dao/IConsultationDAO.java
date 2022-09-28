@@ -1,5 +1,7 @@
 package src.main.java.dao;
 
+import src.main.java.model.Consultation;
+
 import java.util.List;
 import java.util.Optional;
 
