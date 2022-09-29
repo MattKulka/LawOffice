@@ -1,11 +1,11 @@
-package src.main.java.dao;
+package src.main.java.interfaces;
 
 import src.main.java.model.Practice;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface IPracticeDAO {
+public interface IPracticeDAO extends IBaseDAO<Practice> {
 
     Optional<Practice> get(long id);
 

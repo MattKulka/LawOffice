@@ -1,11 +1,11 @@
-package src.main.java.dao;
+package src.main.java.interfaces;
 
 import src.main.java.model.Attorney;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface IAttorneyDAO {
+public interface IAttorneyDAO extends IBaseDAO<Attorney> {
 
     Optional<Attorney> get(long id);
 

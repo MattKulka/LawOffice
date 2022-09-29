@@ -1,8 +1,10 @@
-package src.main.java.dao;
+package src.main.java.interfaces;
+
+import src.main.java.service.ConnectionPool;
 
 import java.sql.Connection;
 
-public interface IConnectionPool {
+public interface IConnectionPool extends IBaseDAO<ConnectionPool>  {
     Connection getConnection();
     boolean releaseConnection(Connection connection);
     String getUrl();
