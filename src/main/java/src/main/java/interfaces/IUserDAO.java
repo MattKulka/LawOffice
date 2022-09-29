@@ -1,11 +1,11 @@
-package src.main.java.dao;
+package src.main.java.interfaces;
 
 import src.main.java.model.User;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface IUserDAO<T> {
+public interface IUserDAO extends IBaseDAO<User> {
     Optional<User> get(long id);
 
     List<User> getAll();

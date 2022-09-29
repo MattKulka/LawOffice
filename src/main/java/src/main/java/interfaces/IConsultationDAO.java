@@ -1,11 +1,11 @@
-package src.main.java.dao;
+package src.main.java.interfaces;
 
 import src.main.java.model.Consultation;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface IConsultationDAO {
+public interface IConsultationDAO extends IBaseDAO<Consultation> {
 
     Optional<Consultation> get(long id);
 
