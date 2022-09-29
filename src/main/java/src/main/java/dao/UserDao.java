@@ -1,5 +1,6 @@
 package src.main.java.dao;
 
+import src.main.java.interfaces.IUserDAO;
 import src.main.java.model.User;
 
 import java.util.ArrayList;
