@@ -1,40 +1,26 @@
 package src.main.java.service;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.*;
 
 public class ConnectionPool {
 
-    private static ConnectionPool pool;
+    public static void main(String[] args) {
 
-    private static final List<Connection> connectionPool = new ArrayList<>(5);
+        try {
 
-    private ConnectionPool() {
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "Matthew1");
 
-    }
+            Statement statement = connection.createStatement();
 
-    public static ConnectionPool getInstance(){
-        if(pool == null){
-            pool = new ConnectionPool();
-            for (int i = 0; i < 5; i++){
-                try {
-                    connectionPool.add(DriverManager.getConnection("jdbc:mysql://localhost:3306/LawOffice", "root", "Matthew1"));
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
+            ResultSet resultSet = statement.executeQuery("select * from Attorney");
+
+            while (resultSet.next()) {
+                System.out.println(resultSet.getString("first_name"));
             }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        return pool;
-    }
-
-    public synchronized Connection getConnection(){
-        return connectionPool.remove(connectionPool.size()-1);
-    }
-
-    public synchronized void returnConnection(Connection connection){
-        connectionPool.add(connection);
     }
 }
