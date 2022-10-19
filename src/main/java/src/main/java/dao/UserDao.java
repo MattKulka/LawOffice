@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-public class UserDao implements IUserDAO<User> {
+public class UserDao implements IUserDAO{
 
     private final List<User> users = new ArrayList<>();
 
@@ -47,4 +47,23 @@ public class UserDao implements IUserDAO<User> {
         users.remove(user);
     }
 
+    @Override
+    public User getByID(long id) {
+        return null;
+    }
+
+    @Override
+    public void remove(long id) {
+
+    }
+
+    @Override
+    public void create(User object) {
+
+    }
+
+    @Override
+    public void update(User object) {
+
+    }
 }
