@@ -1,6 +1,6 @@
 package src.main.java.dao;
 
-import src.main.java.utils.interfaces.IBaseDAO;
+import src.main.java.utility.interfaces.IBaseDAO;
 
 public class BillingDAO implements IBaseDAO {
     @Override

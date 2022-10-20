@@ -1,6 +1,6 @@
 package src.main.java.dao;
 
-import src.main.java.utils.interfaces.IAttorneyDAO;
+import src.main.java.utility.interfaces.IAttorneyDAO;
 import src.main.java.model.Attorney;
 
 import java.util.List;
