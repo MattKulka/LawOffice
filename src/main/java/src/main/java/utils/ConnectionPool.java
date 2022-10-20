@@ -1,4 +1,4 @@
-package src.main.java.service;
+package src.main.java.utils;
 
 import java.sql.*;
 

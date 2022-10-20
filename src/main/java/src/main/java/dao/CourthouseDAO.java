@@ -1,6 +1,6 @@
 package src.main.java.dao;
 
-import src.main.java.interfaces.IBaseDAO;
+import src.main.java.utils.interfaces.IBaseDAO;
 
 public class CourthouseDAO implements IBaseDAO {
     @Override

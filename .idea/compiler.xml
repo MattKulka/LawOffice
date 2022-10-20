@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="LawOffice" target="1.8" />
+      <module name="LawOffice" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
