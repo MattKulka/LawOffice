@@ -1,1 +1,3 @@
-# LawOffice is a program that simulates an experience with a law firm. the User will be able to choose a city and select a crime to be defended for. The user will then be given a price for the services
+# LawOffice
+## Program Usage
+- Simulates a Law office where there are different Attorneys offered at different rates depending on the users case
