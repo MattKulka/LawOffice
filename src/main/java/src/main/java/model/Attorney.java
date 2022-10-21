@@ -11,7 +11,11 @@ public class Attorney {
             Connection conn = DriverManager.getConnection(url,"root","Matthew1");
             Statement st = conn.createStatement();
             st.executeUpdate("INSERT INTO Attorney " +
-                    "VALUES (1001, 'Saul', 'Goodman', 'Family Law', 'Divorce', 'Albuquerque', '300' )");
+                    "VALUES (1002, 'Saul', 'Goodman', 'Family Law', 'Divorce', 'Albuquerque', '300' )");
+            st.executeUpdate("INSERT INTO Attorney " +
+                    "VALUES (1003, 'Walter', 'White', 'Federal Crimes', 'Robbery', 'Albuquerque', '500' )");
+            st.executeUpdate("INSERT INTO Attorney " +
+                    "VALUES (1004, 'Jesse', 'Pinkman', 'Misdemeanor', 'Drug Crimes', 'Albuquerque', '100' )");
 
             conn.close();
         } catch (Exception e) {
