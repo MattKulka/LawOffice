@@ -1,27 +1,24 @@
 package src.main.java.model;
 
+import java.sql.*;
+
+
 public class Attorney {
-    private String name;
-    private int rollNo;
 
-    Attorney(String name, int rollNo){
-        this.name = name;
-        this.rollNo = rollNo;
+    public static void main (String[] args) {
+        try {
+            String url = "jdbc:mysql://localhost:3306/mydb";
+            Connection conn = DriverManager.getConnection(url,"root","Matthew1");
+            Statement st = conn.createStatement();
+            st.executeUpdate("INSERT INTO Attorney " +
+                    "VALUES (1001, 'Saul', 'Goodman', 'Family Law', 'Divorce', 'Albuquerque', '300' )");
+
+            conn.close();
+        } catch (Exception e) {
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
+
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getRollNo() {
-        return rollNo;
-    }
-
-    public void setRollNo(int rollNo) {
-        this.rollNo = rollNo;
-    }
 }

@@ -1,10 +1,9 @@
-package src.main.java.service;
+package src.main.java.utility;
 
 import java.sql.*;
 
 public class ConnectionPool {
-
-    public static void main(String[] args) {
+    public static ConnectionPool main(String[] args) {
 
         try {
 
@@ -22,5 +21,7 @@ public class ConnectionPool {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return null;
     }
 }

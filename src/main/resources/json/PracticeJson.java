@@ -1,4 +1,4 @@
-package src.main.java.json;
+package src.main.java.resources.json;
 
 import java.io.FileWriter;
 import java.io.IOException;

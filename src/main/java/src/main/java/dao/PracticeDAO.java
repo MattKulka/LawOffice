@@ -1,6 +1,6 @@
 package src.main.java.dao;
 
-import src.main.java.interfaces.IPracticeDAO;
+import src.main.java.utility.interfaces.IPracticeDAO;
 import src.main.java.model.Practice;
 
 import java.util.List;

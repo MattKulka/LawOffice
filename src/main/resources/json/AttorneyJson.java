@@ -1,8 +1,11 @@
-package src.main.java.json;
+package src.main.java.resources.json;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import org.json.simple.JSONObject;
+import org.jackson.JsonGenerationException;
+import org.jackson.map.JsonMappingException;
+import org.jackson.map.ObjectMapper;
 
 public class AttorneyJson {
 

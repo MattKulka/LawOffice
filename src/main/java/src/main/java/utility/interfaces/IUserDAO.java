@@ -1,4 +1,4 @@
-package src.main.java.interfaces;
+package src.main.java.utility.interfaces;
 
 import src.main.java.model.User;
 
