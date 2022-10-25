@@ -1,7 +1,5 @@
 package src.main.java.utility.interfaces;
 
-import src.main.java.model.User;
-
 import java.util.List;
 import java.util.Optional;
 
