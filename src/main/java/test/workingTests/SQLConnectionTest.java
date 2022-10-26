@@ -1,11 +1,6 @@
-package test;
+package test.workingTests;
 
-import org.apache.logging.log4j.LogManager;
-import src.main.java.utility.ConnectionPool;
 import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Logger;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,9 +10,11 @@ import java.sql.*;
 
 public class SQLConnectionTest {
 
-    private Connection connection;
+    private static Connection connection;
     private static Statement statement;
     private static ResultSet rs;
+
+
 
     @BeforeClass
     public void setUp() {
@@ -27,6 +24,7 @@ public class SQLConnectionTest {
         connection = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
+            System.out.println("Starting Connection to MYSQL Database");
             System.out.println("Connecting to Database...");
             connection = DriverManager.getConnection(databaseURL, user, password);
             if (connection != null) {
@@ -41,7 +39,7 @@ public class SQLConnectionTest {
     }
 
     @Test
-    public void getAttorneysFromDataBase() {
+    public static void getAttorneysFromDataBase() {
         try {
             String query = "select * from Attorney";
             statement = connection.createStatement();
@@ -54,6 +52,39 @@ public class SQLConnectionTest {
                 String practice = rs.getString("practice");
                 String Office_id = rs.getString("Office_id");
                 System.out.println(Id+ " , "+ first_name + " " + last_name + " , " + practice + " , " + Office_id);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @Test
+    public static void getPaymentFromDataBase() {
+        try {
+            String query = "select * from Payment";
+            statement = connection.createStatement();
+            rs = statement.executeQuery(query);
+
+            while(rs.next()){
+                int Id= rs.getInt("Id");
+                String payment_type = rs.getString("payment_type");
+                String currency= rs.getString("currency");
+                System.out.println(payment_type +  " , " + currency);
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+    @Test
+    public static void getCourthousesFromDataBase() {
+        try {
+            String query = "select * from Courthouse";
+            statement = connection.createStatement();
+            rs = statement.executeQuery(query);
+
+            while(rs.next()){
+                String name= rs.getString("name");
+                System.out.println( name );
             }
         } catch (SQLException ex) {
             ex.printStackTrace();

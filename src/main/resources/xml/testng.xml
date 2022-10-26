@@ -4,8 +4,9 @@
     <test verbose="2" preserve-order="true" name="C:/Users/matth/IdeaProjects/LawOffice/src/main/resources/xml">
         <classes>
 
-            <class name="test.FirstTestCase"/>
+            <class name="test.workingTests.FirstTestCase"/>
             <class name="test.SecondTestCase"/>
+            <class name="test.workingTests.SQLConnectionTest"/>
 
         </classes>
     </test>
