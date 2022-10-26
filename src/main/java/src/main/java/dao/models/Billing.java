@@ -1,4 +1,4 @@
-package src.main.java.model;
+package src.main.java.dao.models;
 
 public class Billing {
     private int paymentMethod;

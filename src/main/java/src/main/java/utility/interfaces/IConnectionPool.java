@@ -1,6 +1,6 @@
 package src.main.java.utility.interfaces;
 
-import src.main.java.utility.ConnectionPool;
+import src.main.java.services.ConnectionPool;
 
 import java.sql.Connection;
 

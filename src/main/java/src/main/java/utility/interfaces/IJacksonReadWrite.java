@@ -1,4 +1,4 @@
-package src.main.java.utility;
+package src.main.java.utility.interfaces;
 
 public interface IJacksonReadWrite {
     String unmarshal(Object object);

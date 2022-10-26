@@ -1,5 +1,7 @@
 package src.main.java.utility.interfaces;
 
+import src.main.java.dao.models.User;
+
 import java.util.List;
 import java.util.Optional;
 

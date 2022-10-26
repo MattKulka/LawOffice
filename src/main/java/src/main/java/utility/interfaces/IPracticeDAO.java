@@ -1,6 +1,6 @@
 package src.main.java.utility.interfaces;
 
-import src.main.java.model.Practice;
+import src.main.java.dao.models.Practice;
 
 import java.util.List;
 import java.util.Optional;

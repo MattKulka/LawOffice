@@ -1,10 +1,18 @@
-package src.main.java.model;
-
-import java.util.Arrays;
+package src.main.java.dao.models;
 
 public class Practice {
 
+    private String practice_type;
+    public Practice(String practice_type) {
+        this.practice_type = practice_type;
+    }
+    public String getPractice_type() {
+        return practice_type;
+    }
+
+
     public static void main(String[] args) {
+
 
         String[] Category = new String[3];
         String[] FLCrimes = new String[5];

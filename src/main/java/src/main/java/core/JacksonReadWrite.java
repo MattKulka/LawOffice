@@ -1,10 +1,11 @@
-package src.main.java.utility;
+package src.main.java.core;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import src.main.java.utility.interfaces.IJacksonReadWrite;
 
 import java.io.FileReader;
 import java.io.IOException;
